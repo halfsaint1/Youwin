@@ -1,0 +1,37 @@
+[
+  {
+    "prompt": "Premium editorial hero photography for studying in the United Kingdom, diverse group of international university students including Nigerian students walking together across an elegant red-brick British campus after light rain, books and backpacks, genuine conversation, soft overcast daylight, cinematic but realistic, sophisticated forest-green and warm neutral color grade matching an education consultancy brand, generous negative space for website layout, wide landscape composition, no text, no logos, no watermark, no national flags, no graduation caps",
+    "out": "public/images/generated/destination-united-kingdom.webp",
+    "size": "1536x1024",
+    "quality": "high",
+    "format": "webp"
+  },
+  {
+    "prompt": "Premium editorial hero photography for studying in Ireland, diverse international students including Nigerian students beside a historic stone university building in Dublin with lush green campus, friendly conversation with notebooks and backpacks, fresh soft daylight after rain, authentic modern student life, sophisticated emerald and warm neutral color grade, generous negative space for website layout, wide landscape composition, no text, no logos, no watermark, no national flags, no graduation caps",
+    "out": "public/images/generated/destination-ireland.webp",
+    "size": "1536x1024",
+    "quality": "high",
+    "format": "webp"
+  },
+  {
+    "prompt": "Premium editorial hero photography for studying in the United States, diverse international students including Nigerian students crossing a spacious American university quad with modern research buildings and mature trees, energetic collaborative mood, backpacks and study materials, crisp golden morning light, cinematic realism, refined forest-green and warm neutral grade, generous negative space for website layout, wide landscape composition, no text, no logos, no watermark, no national flags, no graduation caps",
+    "out": "public/images/generated/destination-usa.webp",
+    "size": "1536x1024",
+    "quality": "high",
+    "format": "webp"
+  },
+  {
+    "prompt": "Premium editorial hero photography for studying in Canada, diverse international students including Nigerian students walking across a contemporary Toronto university campus in early winter with light snow, warm coats and backpacks, welcoming confident expressions, soft blue winter daylight balanced with warm skin tones, cinematic realism, refined forest-green accents, generous negative space for website layout, wide landscape composition, no text, no logos, no watermark, no national flags, no graduation caps",
+    "out": "public/images/generated/destination-canada.webp",
+    "size": "1536x1024",
+    "quality": "high",
+    "format": "webp"
+  },
+  {
+    "prompt": "Premium editorial hero photography for studying in Australia, diverse international students including Nigerian students on a bright contemporary Melbourne university campus with distinctive modern architecture and eucalyptus greenery, relaxed conversation with notebooks and backpacks, clear warm daylight, optimistic sophisticated atmosphere, cinematic realism, refined forest-green and sun-warmed neutral grade, generous negative space for website layout, wide landscape composition, no text, no logos, no watermark, no national flags, no graduation caps",
+    "out": "public/images/generated/destination-australia.webp",
+    "size": "1536x1024",
+    "quality": "high",
+    "format": "webp"
+  }
+]

@@ -1,0 +1,202 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  /* Brand palette — extracted from youwinconsult.com */
+  --ink: #1b1d23;
+  --ink-soft: #23262e;
+  --brand: #2d5a05;
+  --brand-dark: #234704;
+  --brand-soft: #eaf2e1;
+  --lime: #b8f451;
+  --sky: #9de4f4;
+  --cream: #f8f9f4;
+  --sand: #eeefea;
+
+  /* shadcn/ui tokens */
+  --background: #ffffff;
+  --foreground: #1b1d23;
+  --card: #ffffff;
+  --card-foreground: #1b1d23;
+  --popover: #ffffff;
+  --popover-foreground: #1b1d23;
+  --primary: #2d5a05;
+  --primary-foreground: #f8f9f4;
+  --secondary: #eeefea;
+  --secondary-foreground: #1b1d23;
+  --muted: #f8f9f4;
+  --muted-foreground: #52555c;
+  --accent: #b8f451;
+  --accent-foreground: #1b1d23;
+  --destructive: #b3261e;
+  --destructive-foreground: #ffffff;
+  --border: #e5e7de;
+  --input: #d9dbd2;
+  --ring: #2d5a05;
+  --radius: 1rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-brand: var(--brand);
+  --color-brand-dark: var(--brand-dark);
+  --color-brand-soft: var(--brand-soft);
+  --color-lime: var(--lime);
+  --color-sky: var(--sky);
+  --color-cream: var(--cream);
+  --color-sand: var(--sand);
+
+  --font-sans: var(--font-spline-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-spline-mono), ui-monospace, monospace;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 12px);
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background: var(--lime);
+    color: var(--ink);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* Full-width shell: fluid gutters, generous ceiling for large monitors. */
+@utility container-site {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 96rem;
+  padding-inline: clamp(1.25rem, 4vw, 5rem);
+}
+
+/* Narrower measure for long-form reading. */
+@utility container-prose {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 46rem;
+  padding-inline: clamp(1.25rem, 4vw, 2rem);
+}
+
+/* Document voice — mono eyebrow used for section labels and data. */
+@utility eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--brand);
+}
+
+/* Fluid editorial display sizes. */
+@utility text-display {
+  font-size: clamp(2.375rem, 11vw, 6.75rem);
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  font-weight: 650;
+}
+
+@utility text-display-sm {
+  font-size: clamp(2.25rem, 4.5vw, 4.25rem);
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+  font-weight: 650;
+}
+
+@utility text-heading {
+  font-size: clamp(1.875rem, 3vw, 3rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+/* Soft, diffuse elevation for cards and floating chips. */
+@utility shadow-soft {
+  box-shadow: 0 24px 56px -20px rgb(27 29 35 / 0.16);
+}
+
+@keyframes partner-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes partner-marquee-reverse {
+  from {
+    transform: translate3d(-50%, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@utility animate-partner-marquee {
+  animation: partner-marquee 80s linear infinite;
+}
+
+@utility animate-partner-marquee-reverse {
+  animation: partner-marquee-reverse 80s linear infinite;
+}
+
+.group\/marquee:hover .animate-partner-marquee,
+.group\/marquee:hover .animate-partner-marquee-reverse {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-partner-marquee,
+  .animate-partner-marquee-reverse {
+    animation: none !important;
+    transform: none !important;
+  }
+}

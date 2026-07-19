@@ -1,0 +1,58 @@
+[
+  {
+    "prompt": "Ultra-photorealistic premium editorial photograph for a study abroad website, a small diverse group of genuine university students including Nigerian students walking naturally across a historic red-brick British university campus after light rain, authentic candid expressions, realistic skin pores and hair, naturally wrinkled clothes, books and backpacks, soft overcast daylight, subtle wet pavement reflections, shot on a full-frame camera with a 35mm documentary lens, restrained forest-green and warm neutral colour grade, true-to-life proportions, layered background depth, wide horizontal composition with safe negative space, no posed stock-photo smiles, no artificial glow, no CGI, no illustration, no text, no logos, no watermark, no flags, no graduation caps",
+    "out": "public/images/generated/destination-united-kingdom.webp",
+    "size": "1536x1024",
+    "quality": "high",
+    "format": "webp"
+  },
+  {
+    "prompt": "Ultra-photorealistic premium editorial photograph for a study abroad website, diverse international university students including Nigerian students in candid conversation beside an old stone university building in Dublin, lush green Irish campus after rain, notebooks and backpacks, realistic skin texture and natural clothing folds, fresh diffused daylight, true architectural detail, shot on a full-frame camera with a 35mm documentary lens, understated emerald and warm neutral colour grade, wide horizontal composition with safe negative space, no posed stock-photo smiles, no artificial glow, no CGI, no illustration, no text, no logos, no watermark, no flags, no graduation caps",
+    "out": "public/images/generated/destination-ireland.webp",
+    "size": "1536x1024",
+    "quality": "high",
+    "format": "webp"
+  },
+  {
+    "prompt": "Ultra-photorealistic premium editorial photograph for a study abroad website, diverse international university students including Nigerian students naturally crossing a spacious American university quad, authentic modern research buildings and mature trees, backpacks and study materials, lively but unposed campus moment, realistic skin pores, hair and clothing, crisp early-morning sunlight with natural shadows, shot on a full-frame camera with a 35mm documentary lens, true-to-life colour and proportions, wide horizontal composition with safe negative space, no staged stock-photo poses, no artificial glow, no CGI, no illustration, no text, no logos, no watermark, no flags, no graduation caps",
+    "out": "public/images/generated/destination-usa.webp",
+    "size": "1536x1024",
+    "quality": "high",
+    "format": "webp"
+  },
+  {
+    "prompt": "Ultra-photorealistic premium editorial photograph for a study abroad website, diverse international university students including Nigerian students walking across a contemporary Toronto university campus in early winter, very light fresh snow, practical warm coats and backpacks, genuine relaxed expressions, realistic skin texture, breath and fabric detail, soft blue winter daylight balanced with natural warm skin tones, shot on a full-frame camera with a 35mm documentary lens, true-to-life urban campus background, wide horizontal composition with safe negative space, no posed stock-photo smiles, no artificial glow, no CGI, no illustration, no text, no logos, no watermark, no flags, no graduation caps",
+    "out": "public/images/generated/destination-canada.webp",
+    "size": "1536x1024",
+    "quality": "high",
+    "format": "webp"
+  },
+  {
+    "prompt": "Ultra-photorealistic premium editorial photograph for a study abroad website, diverse international university students including Nigerian students in natural conversation on a contemporary Melbourne university campus, distinctive real modern architecture and eucalyptus greenery, notebooks and backpacks, clear warm Australian daylight with physically accurate shadows, realistic skin pores, hair and clothing folds, shot on a full-frame camera with a 35mm documentary lens, understated cinematic colour, wide horizontal composition with safe negative space, no staged stock-photo poses, no artificial glow, no CGI, no illustration, no text, no logos, no watermark, no flags, no graduation caps",
+    "out": "public/images/generated/destination-australia.webp",
+    "size": "1536x1024",
+    "quality": "high",
+    "format": "webp"
+  },
+  {
+    "prompt": "Ultra-photorealistic editorial photograph for an article titled How to Study in the UK from Nigeria, two Nigerian university applicants in their early twenties sitting at a bright study table with a laptop, printed course notes and passport-sized document folder, reviewing British university options with focused natural expressions, contemporary education consultancy setting, authentic skin and fabric texture, soft window daylight, shot on a full-frame camera with a 50mm documentary lens, premium restrained colour grade, horizontal 16:10 composition, no visible private data, no readable screen text, no staged stock-photo smiles, no CGI, no illustration, no text overlay, no logos, no watermark",
+    "out": "public/images/generated/blog-study-in-uk.webp",
+    "size": "1536x1024",
+    "quality": "high",
+    "format": "webp"
+  },
+  {
+    "prompt": "Ultra-photorealistic editorial photograph for an article about UK student visa requirements for Nigerians, close natural three-quarter view of a Nigerian university applicant carefully organising a passport, neutral document folder and checklist at a clean desk, laptop softly out of focus, calm professional consultation environment, hands anatomically correct, no visible private details, realistic skin texture and paper detail, soft directional window light, shot on a full-frame camera with a 50mm documentary lens, sophisticated neutral colour grade, horizontal 16:10 composition, no readable text, no staged stock-photo look, no CGI, no illustration, no text overlay, no logos, no watermark",
+    "out": "public/images/generated/blog-uk-student-visa.webp",
+    "size": "1536x1024",
+    "quality": "high",
+    "format": "webp"
+  },
+  {
+    "prompt": "Ultra-photorealistic editorial photograph for an article about international scholarships for Nigerian students, ambitious Nigerian graduate in their early twenties researching scholarship opportunities at a university library table, laptop and neatly arranged notebook, thoughtful confident expression, shelves and other students softly blurred in the background, authentic skin pores, natural hair and clothing texture, warm daylight, shot on a full-frame camera with a 50mm documentary lens and shallow depth of field, premium restrained colour grade, horizontal 16:10 composition, no readable screen text, no graduation cap, no staged stock-photo smile, no CGI, no illustration, no text overlay, no logos, no watermark",
+    "out": "public/images/generated/blog-scholarships.webp",
+    "size": "1536x1024",
+    "quality": "high",
+    "format": "webp"
+  }
+]
