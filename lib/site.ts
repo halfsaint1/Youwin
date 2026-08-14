@@ -17,9 +17,9 @@ export const site = {
     country: "United Kingdom",
     full: "6 Parkland Rise, Minehead, UK",
   },
-  phones: ["+234 702 047 6883", "+234 806 701 6166"],
-  whatsapp: "+234 702 047 6883",
-  whatsappHref: "https://wa.me/2347020476883",
+  phones: ["+234 8167972108", "+234 806 701 6166"],
+  whatsapp: "+234 8167972108",
+  whatsappHref: "https://wa.me/2348167972108",
   email: "hello@youwinconsult.com",
   formsEmail: "form@youwinconsult.com",
   social: {
