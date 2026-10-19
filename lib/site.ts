@@ -6,7 +6,7 @@ export const site = {
   description:
     "YouWin Educational Consulting is an education consultancy with offices in the UK and Nigeria, helping Nigerian students secure admissions, visas, and scholarships at top universities in the UK, Ireland, the USA, Canada, and Australia.",
   address: {
-    street: "221 Broad Street",
+    street: "70 Broad Street",
     locality: "Lagos Island",
     region: "Lagos",
     country: "Nigeria",
