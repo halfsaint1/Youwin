@@ -21,8 +21,8 @@ export function WhoWeAre() {
         <div className="grid grid-cols-[1fr_0.85fr] gap-5">
           <div className="relative aspect-[3/4] overflow-hidden rounded-[1.75rem]">
             <Image
-              src="/images/about-panel-left.jpg"
-              alt="Students researching universities together with a YouWin advisor at the office"
+              src="/images/generated/about-youwin-students.jpg"
+              alt="International students researching universities with an education advisor"
               fill
               sizes="(max-width: 1024px) 55vw, 26vw"
               className="object-cover transition-transform duration-700 hover:scale-[1.03]"
@@ -30,8 +30,8 @@ export function WhoWeAre() {
           </div>
           <div className="relative mt-14 aspect-[3/4] overflow-hidden rounded-[1.75rem]">
             <Image
-              src="/images/about-panel-right.jpg"
-              alt="A YouWin consultant guiding a student through his study abroad options"
+              src="/images/generated/about-youwin-consultation.jpg"
+              alt="An education consultant guiding a student through his study abroad plan"
               fill
               sizes="(max-width: 1024px) 45vw, 22vw"
               className="object-cover transition-transform duration-700 hover:scale-[1.03]"
