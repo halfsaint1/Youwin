@@ -53,15 +53,15 @@ export function WhoWeAre() {
             Who We Are
           </h2>
           <p className="mt-6 max-w-2xl text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
-            YouWin Educational Consulting is a global education consultancy
-            with offices in the UK, Nigeria, and the UAE. We help students from
-            all backgrounds achieve their goal of studying abroad. Thanks to
-            our partnerships with accredited universities in the UK, USA,
-            Canada, and Europe, we offer expert support at every step, from
-            your first consultation to university placement and visa
-            application.
+            YouWin Educational Consulting is an education consultancy with
+            offices in the UK, Nigeria, and the UAE, dedicated to helping
+            Nigerian students achieve their goal of studying abroad. Through
+            our partnerships with accredited universities in the UK, Ireland,
+            the USA, Canada, and Australia, we offer expert support at every
+            step, from your first consultation to university placement and
+            visa application.
           </p>
-          <p className="mt-4 max-w-2xl text-pretty leading-relaxed text-muted-foreground">
+          <p className="mt-4 max-w-2xl text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
             We pay close attention to every detail to make sure your journey is
             smooth, well-organized, and stress-free from start to finish.
           </p>
