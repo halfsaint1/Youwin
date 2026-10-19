@@ -10,6 +10,7 @@ export const site = {
     locality: "Lagos Island",
     region: "Lagos",
     country: "Nigeria",
+    full: "70 Broad Street, Lagos Island, Lagos, Nigeria",
   },
   addressUK: {
     street: "6 Parkland Rise",
