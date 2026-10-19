@@ -26,7 +26,7 @@ export default function Home() {
       <Roadmap />
       <TestimonialsCarousel />
       <Destinations />
-      <CtaBand />
+      <CtaBand spacious />
       <BlogPreview />
     </>
   );
