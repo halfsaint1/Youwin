@@ -1,77 +1,144 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
-import { CalendarCheck, MessageCircle, Sparkles } from "lucide-react";
+import { ChevronRight, ShieldCheck } from "lucide-react";
 
-import { roadmap } from "@/lib/content";
-import { PageHero } from "@/components/page-hero";
+import { roadmap, stats } from "@/lib/content";
 import { Reveal } from "@/components/motion";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { BookConsultationForm } from "@/components/book-consultation-form";
+import { BOOKING_TIMEZONE_LABEL } from "@/lib/booking";
 
 export const metadata: Metadata = {
   title: "Book a Free Consultation",
   description:
-    "Book your free consultation with YouWin Educational Consulting. Tell us your ambitions and we'll identify the courses, universities, and destinations that suit you best.",
+    "Book your free consultation with YouWin Educational Consulting. Pick a date and time, and we'll identify the courses, universities, and destinations that suit you best.",
   alternates: { canonical: "/book-consultation" },
 };
 
-const highlights = [
+const trustStats = stats.slice(0, 2);
+
+const faqs = [
   {
-    icon: Sparkles,
-    text: "Personalised advice for your study goals",
+    question: "Is the consultation really free?",
+    answer:
+      "Yes. Your first consultation is completely free and there is no obligation to continue with our services afterwards.",
   },
   {
-    icon: CalendarCheck,
-    text: "We schedule at a time that suits you",
+    question: "What should I prepare before the call?",
+    answer:
+      "Have your latest results (WAEC, NECO, degree or HND transcripts), your preferred courses or destinations, and a rough budget for tuition and living costs. If you don't have everything yet, that's fine; we'll help you work out what you need.",
   },
   {
-    icon: MessageCircle,
-    text: "Phone, WhatsApp, or video — your choice",
+    question: "Which time zone are the slots in?",
+    answer: `All slots are shown in ${BOOKING_TIMEZONE_LABEL}. If you're booking from outside Nigeria, we also show the matching time where you are.`,
+  },
+  {
+    question: "Can parents or guardians join?",
+    answer:
+      "Yes. Parents and guardians are welcome to join, and it's a good chance to ask about costs, safety and the visa process.",
   },
 ];
 
 export default function BookConsultationPage() {
   return (
     <>
-      <PageHero
-        breadcrumb="Book Free Consultation"
-        title="Book your free consultation"
-        description="Share a few details and our team will reach out to schedule your session."
-      />
-
-      <section className="container-site py-12 sm:py-16">
-        <Reveal>
-          <ul className="mx-auto mb-10 flex max-w-5xl flex-wrap justify-center gap-x-8 gap-y-3">
-            {highlights.map((item) => (
-              <li
-                key={item.text}
-                className="flex items-center gap-2 text-sm text-muted-foreground"
-              >
-                <item.icon className="size-4 shrink-0 text-brand" aria-hidden />
-                {item.text}
-              </li>
-            ))}
-          </ul>
-        </Reveal>
-
-        <Reveal delay={0.05}>
-          <div className="mx-auto w-full max-w-5xl">
-            <BookConsultationForm />
+      <section className="relative overflow-hidden border-b bg-cream">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute -left-32 -top-20 size-96 rounded-full bg-brand-soft blur-[110px]"
+        />
+        <div
+          aria-hidden
+          className="pointer-events-none absolute -right-20 bottom-0 size-72 rounded-full bg-lime/25 blur-[100px]"
+        />
+        <div className="container-site relative grid items-center gap-12 pb-40 pt-10 sm:pt-14 lg:grid-cols-[1.1fr_0.9fr] lg:pb-48">
+          <div className="animate-in fade-in slide-in-from-bottom-4 fill-mode-both duration-700">
+            <nav aria-label="Breadcrumb">
+              <ol className="flex items-center gap-1.5 font-mono text-xs uppercase tracking-[0.14em] text-muted-foreground">
+                <li>
+                  <Link href="/" className="transition-colors hover:text-brand">
+                    Home
+                  </Link>
+                </li>
+                <li aria-hidden>
+                  <ChevronRight className="size-3.5" />
+                </li>
+                <li aria-current="page" className="text-brand">
+                  Book Free Consultation
+                </li>
+              </ol>
+            </nav>
+            <p className="mt-8 inline-flex items-center gap-2 rounded-full border border-brand/15 bg-white/70 px-3.5 py-1.5 text-xs font-medium text-brand backdrop-blur">
+              <ShieldCheck className="size-3.5" aria-hidden />
+              Free one-to-one session · No obligation
+            </p>
+            <h1 className="mt-5 max-w-xl text-balance text-[clamp(2.25rem,5vw,3.75rem)] font-bold leading-[1.04] tracking-tight text-ink">
+              Book your free study abroad consultation
+            </h1>
+            <p className="mt-5 max-w-lg text-pretty text-lg leading-relaxed text-muted-foreground">
+              Choose a date and time that suits you. An adviser will walk you
+              through realistic universities, costs and visa steps for your
+              profile.
+            </p>
+            <dl className="mt-9 flex flex-wrap gap-x-10 gap-y-5">
+              {trustStats.map((stat) => (
+                <div key={stat.label}>
+                  <dt className="sr-only">{stat.label}</dt>
+                  <dd>
+                    <span className="block font-mono text-3xl font-semibold text-brand">
+                      {stat.value}
+                      {stat.suffix}
+                    </span>
+                    <span className="mt-1 block text-sm text-muted-foreground">
+                      {stat.label}
+                    </span>
+                  </dd>
+                </div>
+              ))}
+            </dl>
           </div>
-        </Reveal>
 
-        <Reveal delay={0.1}>
-          <div className="mx-auto mt-14 max-w-3xl">
-            <p className="eyebrow text-center">What happens next</p>
-            <ol className="mt-6 grid gap-5 sm:grid-cols-2">
+          <div className="relative hidden lg:block">
+            <div className="relative aspect-[4/5] max-h-[30rem] overflow-hidden rounded-[2rem] shadow-[0_30px_60px_-25px_rgba(27,29,35,0.35)]">
+              <Image
+                src="/images/generated/about-youwin-consultation.jpg"
+                alt="A YouWin consultant guiding a student through his study abroad plan"
+                fill
+                priority
+                sizes="40vw"
+                className="object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="booking" className="container-site scroll-mt-24">
+        <Reveal className="relative z-10 mx-auto -mt-28 max-w-6xl lg:-mt-36">
+          <BookConsultationForm />
+        </Reveal>
+      </section>
+
+      <section className="container-site py-20 sm:py-24">
+        <div className="mx-auto grid max-w-6xl gap-14 lg:grid-cols-2 lg:gap-20">
+          <Reveal>
+            <p className="eyebrow">What happens next</p>
+            <h2 className="mt-3 text-2xl font-bold tracking-tight text-ink sm:text-3xl">
+              From your first call to arrival day
+            </h2>
+            <ol className="mt-8 space-y-6">
               {roadmap.map((step, index) => (
-                <li
-                  key={step.title}
-                  className="flex gap-4 rounded-2xl border bg-white p-5 shadow-[0_1px_2px_rgba(27,29,35,0.04)]"
-                >
-                  <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-brand-soft font-mono text-sm font-semibold text-brand">
+                <li key={step.title} className="flex gap-5">
+                  <span className="flex size-11 shrink-0 items-center justify-center rounded-2xl bg-brand-soft font-mono text-sm font-semibold text-brand">
                     {String(index + 1).padStart(2, "0")}
                   </span>
-                  <div>
+                  <div className="pt-1">
                     <h3 className="font-semibold text-ink">{step.title}</h3>
                     <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
                       {step.description}
@@ -80,21 +147,37 @@ export default function BookConsultationPage() {
                 </li>
               ))}
             </ol>
-          </div>
-        </Reveal>
+          </Reveal>
 
-        <Reveal delay={0.15}>
-          <p className="mx-auto mt-8 max-w-lg text-center text-sm text-muted-foreground">
-            Ready to apply straight away?{" "}
-            <Link
-              href="/apply"
-              className="font-medium text-brand underline-offset-4 hover:underline"
+          <Reveal delay={0.05}>
+            <p className="eyebrow">Good to know</p>
+            <h2 className="mt-3 text-2xl font-bold tracking-tight text-ink sm:text-3xl">
+              Before you book
+            </h2>
+            <Accordion
+              type="single"
+              collapsible
+              className="mt-6 rounded-3xl border bg-white px-6 sm:px-8"
             >
-              Complete the application form
-            </Link>{" "}
-            instead.
-          </p>
-        </Reveal>
+              {faqs.map((item, i) => (
+                <AccordionItem key={item.question} value={`faq-${i}`}>
+                  <AccordionTrigger>{item.question}</AccordionTrigger>
+                  <AccordionContent>{item.answer}</AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+            <p className="mt-6 text-sm text-muted-foreground">
+              Ready to apply straight away?{" "}
+              <Link
+                href="/apply"
+                className="font-medium text-brand underline-offset-4 hover:underline"
+              >
+                Complete the application form
+              </Link>{" "}
+              instead.
+            </p>
+          </Reveal>
+        </div>
       </section>
     </>
   );

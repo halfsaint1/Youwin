@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 import {
   consultationSchema,
   formatConsultationEmail,
+  formatConsultationSlot,
 } from "@/lib/forms/consultation";
 import { sendFormEmail } from "@/lib/send-form-email";
 
@@ -13,7 +14,12 @@ export async function POST(request: Request) {
 
     if (!parsed.success) {
       return NextResponse.json(
-        { error: "Please check the form and try again." },
+        {
+          error:
+            parsed.error.issues.find((issue) =>
+              issue.path.includes("consultationTime")
+            )?.message ?? "Please check the form and try again.",
+        },
         { status: 400 }
       );
     }
@@ -21,7 +27,7 @@ export async function POST(request: Request) {
     const data = parsed.data;
 
     await sendFormEmail({
-      subject: `Free consultation request: ${data.name}`,
+      subject: `Consultation request: ${data.name} — ${formatConsultationSlot(data)}`,
       text: formatConsultationEmail(data),
       replyTo: data.email,
     });
