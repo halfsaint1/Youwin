@@ -220,6 +220,14 @@ export const caseStudies: Testimonial[] = [
   },
 ];
 
+/** Stories rotated in the homepage testimonial carousel. */
+export const carouselTestimonials: Testimonial[] = [
+  ...caseStudies,
+  ...homeTestimonials.filter((t) =>
+    ["Ngozi Chukwu", "Dayo Ogundare"].includes(t.name)
+  ),
+];
+
 export const faqs = [
   {
     question: "What services does YouWin Educational Consulting offer?",

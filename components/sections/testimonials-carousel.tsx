@@ -5,18 +5,21 @@ import Image from "next/image";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ArrowLeft, ArrowRight, BadgeCheck, Quote, Star } from "lucide-react";
 
-import { caseStudies } from "@/lib/content";
+import { carouselTestimonials } from "@/lib/content";
 import { Badge } from "@/components/ui/badge";
 
 export function TestimonialsCarousel() {
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(1);
   const reduce = useReducedMotion();
-  const testimonial = caseStudies[index];
+  const testimonial = carouselTestimonials[index];
 
   const go = useCallback((dir: number) => {
     setDirection(dir);
-    setIndex((i) => (i + dir + caseStudies.length) % caseStudies.length);
+    setIndex(
+      (i) =>
+        (i + dir + carouselTestimonials.length) % carouselTestimonials.length
+    );
   }, []);
 
   useEffect(() => {
@@ -59,7 +62,7 @@ export function TestimonialsCarousel() {
               aria-live="polite"
             >
               {String(index + 1).padStart(2, "0")} /{" "}
-              {String(caseStudies.length).padStart(2, "0")}
+              {String(carouselTestimonials.length).padStart(2, "0")}
             </p>
           </div>
         </div>
