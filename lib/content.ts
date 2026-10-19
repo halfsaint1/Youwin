@@ -287,6 +287,6 @@ export const coreValues = [
   {
     title: "Team Work",
     description:
-      "Your success needs more than one person. Our teams in the UK, Nigeria, and the UAE work together so nothing important gets missed.",
+      "Your success needs more than one person. Our teams in the UK and Nigeria work together so nothing important gets missed.",
   },
 ];

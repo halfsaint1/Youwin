@@ -21,7 +21,7 @@ import { CtaBand } from "@/components/sections/cta-band";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "YouWin Educational Consulting helps ambitious students study abroad with honest guidance and hands-on support at every step. Offices in the UK, Nigeria, and the UAE.",
+    "YouWin Educational Consulting helps ambitious students study abroad with honest guidance and hands-on support at every step. Offices in the UK and Nigeria.",
   alternates: { canonical: "/about" },
 };
 
@@ -76,9 +76,9 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="absolute -bottom-6 -left-4 rounded-2xl border bg-white px-6 py-4 shadow-[0_20px_48px_-16px_rgba(27,29,35,0.18)] sm:-left-8">
-            <p className="font-mono text-2xl font-semibold text-brand">3</p>
+            <p className="font-mono text-2xl font-semibold text-brand">2</p>
             <p className="text-xs font-medium text-muted-foreground">
-              Offices in the UK, Nigeria &amp; UAE
+              Offices in the UK &amp; Nigeria
             </p>
           </div>
         </Reveal>
@@ -109,7 +109,7 @@ export default function AboutPage() {
             built YouWin to provide both.
           </p>
           <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-            Today we work from offices in the UK, Nigeria, and the UAE, helping
+            Today we work from offices in the UK and Nigeria, helping
             students secure admissions, visas, and scholarships. We bring solid
             knowledge of international education systems, and we stay involved
             until the job is done.

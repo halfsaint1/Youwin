@@ -54,7 +54,7 @@ export function WhoWeAre() {
           </h2>
           <p className="mt-6 max-w-2xl text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
             YouWin Educational Consulting is an education consultancy with
-            offices in the UK, Nigeria, and the UAE, dedicated to helping
+            offices in the UK and Nigeria, dedicated to helping
             Nigerian students achieve their goal of studying abroad. Through
             our partnerships with accredited universities in the UK, Ireland,
             the USA, Canada, and Australia, we offer expert support at every
