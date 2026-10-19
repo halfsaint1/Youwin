@@ -11,6 +11,7 @@ import { Badge } from "@/components/ui/badge";
 export function TestimonialsCarousel() {
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(1);
+  const [paused, setPaused] = useState(false);
   const reduce = useReducedMotion();
   const testimonial = carouselTestimonials[index];
 
@@ -23,13 +24,21 @@ export function TestimonialsCarousel() {
   }, []);
 
   useEffect(() => {
-    if (reduce) return;
+    if (reduce || paused) return;
     const timer = setInterval(() => go(1), 8000);
     return () => clearInterval(timer);
-  }, [go, index, reduce]);
+  }, [go, index, reduce, paused]);
 
   return (
-    <section className="border-y bg-sand">
+    <section
+      className="border-y bg-sand"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+      onFocus={() => setPaused(true)}
+      onBlur={(e) => {
+        if (!e.currentTarget.contains(e.relatedTarget)) setPaused(false);
+      }}
+    >
       <div className="container-site grid gap-12 py-24 sm:py-32 lg:grid-cols-[0.68fr_1.32fr] lg:gap-20">
         {/* Left rail */}
         <div className="flex flex-col justify-between gap-10">
