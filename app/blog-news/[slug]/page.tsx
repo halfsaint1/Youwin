@@ -74,9 +74,9 @@ function headingId(text: string) {
 }
 
 function formatDate(iso: string) {
-  return new Date(`${iso}T00:00:00Z`).toLocaleDateString("en-GB", {
-    day: "numeric",
+  return new Date(`${iso}T00:00:00Z`).toLocaleDateString("en-US", {
     month: "long",
+    day: "numeric",
     year: "numeric",
     timeZone: "UTC",
   });
@@ -315,7 +315,7 @@ export default async function BlogPostPage({
                 </p>
                 <p className="flex items-center gap-1.5">
                   <CalendarDays className="size-4" aria-hidden />
-                  <time dateTime={post.dateISO}>{formatDate(post.dateISO)}</time>
+                  <time dateTime={post.dateISO}>{post.date}</time>
                 </p>
                 {wasUpdated && (
                   <p className="flex items-center gap-1.5">
