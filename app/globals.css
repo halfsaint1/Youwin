@@ -8,6 +8,7 @@
   --brand: #2d5a05;
   --brand-dark: #234704;
   --brand-soft: #eaf2e1;
+  --forest: #0d1906;
   --lime: #b8f451;
   --sky: #9de4f4;
   --cream: #f8f9f4;
@@ -62,6 +63,7 @@
   --color-brand: var(--brand);
   --color-brand-dark: var(--brand-dark);
   --color-brand-soft: var(--brand-soft);
+  --color-forest: var(--forest);
   --color-lime: var(--lime);
   --color-sky: var(--sky);
   --color-cream: var(--cream);
