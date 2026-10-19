@@ -21,8 +21,8 @@ export function WhoWeAre() {
         <div className="grid grid-cols-[1fr_0.85fr] gap-5">
           <div className="relative aspect-[3/4] overflow-hidden rounded-[1.75rem]">
             <Image
-              src="/images/generated/about-youwin-students.jpg"
-              alt="International students researching universities with an education advisor"
+              src="/images/about-students-laptop.jpg"
+              alt="Two students reviewing university options together on a laptop and tablet"
               fill
               sizes="(max-width: 1024px) 55vw, 26vw"
               className="object-cover transition-transform duration-700 hover:scale-[1.03]"
