@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Quote, Star } from "lucide-react";
 
 import { caseStudies, homeTestimonials } from "@/lib/content";
@@ -21,6 +22,7 @@ function TestimonialCard({
   role,
   country,
   tags,
+  image,
 }: (typeof caseStudies)[number]) {
   return (
     <figure className="flex h-full flex-col rounded-3xl border bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:border-brand/20 hover:shadow-[0_16px_40px_rgba(45,90,5,0.10)]">
@@ -39,10 +41,25 @@ function TestimonialCard({
         “{quote}”
       </blockquote>
       <figcaption className="mt-6 border-t pt-5">
-        <p className="font-semibold text-ink">{name}</p>
-        <p className="mt-0.5 text-sm text-muted-foreground">
-          {role} · {country}
-        </p>
+        <div className="flex items-center gap-4">
+          {image && (
+            <div className="relative size-14 shrink-0 overflow-hidden rounded-full ring-2 ring-brand-soft">
+              <Image
+                src={image}
+                alt={`Portrait of ${name}`}
+                fill
+                sizes="56px"
+                className="object-cover object-top"
+              />
+            </div>
+          )}
+          <div>
+            <p className="font-semibold text-ink">{name}</p>
+            <p className="mt-0.5 text-sm text-muted-foreground">
+              {role} · {country}
+            </p>
+          </div>
+        </div>
         <div className="mt-3.5 flex flex-wrap gap-2">
           {tags.map((tag) => (
             <Badge key={tag}>{tag}</Badge>

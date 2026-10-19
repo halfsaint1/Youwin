@@ -10,8 +10,8 @@ export const scholarshipsPost: Post = {
   updatedISO: "2026-07-13",
   author: "YouWin Scholarship Team",
   readingTime: "12 min read",
-  image: "/images/hero-graduate.jpg",
-  imageAlt: "Nigerian graduate researching international scholarships",
+  image: "/images/generated/blog/scholarships.webp",
+  imageAlt: "Nigerian student researching international scholarships in a library",
   excerpt:
     "A verified guide to study abroad scholarships for Nigerian students in 2026/27, including Chevening, Commonwealth and university awards.",
   keywords: [

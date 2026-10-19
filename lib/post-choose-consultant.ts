@@ -10,8 +10,8 @@ export const chooseConsultantPost: Post = {
   updatedISO: "2026-07-13",
   author: "YouWin Education Team",
   readingTime: "10 min read",
-  image: "/images/about-consultant-session.png",
-  imageAlt: "Student meeting a study abroad consultant in Nigeria",
+  image: "/images/generated/blog/choose-consultant.webp",
+  imageAlt: "A student and her father meeting a study abroad consultant in Lagos",
   excerpt:
     "Use these 12 checks to choose a trustworthy study abroad consultant in Nigeria, compare fees and avoid fake admission, scholarship and visa promises.",
   keywords: [

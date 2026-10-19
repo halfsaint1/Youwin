@@ -10,8 +10,8 @@ export const studyInUkPost: Post = {
   updatedISO: "2026-07-13",
   author: "YouWin Education Team",
   readingTime: "11 min read",
-  image: "/images/students-group.jpg",
-  imageAlt: "International students discussing their UK university applications",
+  image: "/images/generated/blog/study-in-uk.webp",
+  imageAlt: "Nigerian students walking across a UK university campus",
   excerpt:
     "A practical 2026/27 guide for Nigerian students applying to UK universities, covering entry requirements, costs, timelines, documents, CAS and visas.",
   keywords: [

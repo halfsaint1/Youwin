@@ -10,8 +10,8 @@ export const canadaStudyPermitPost: Post = {
   updatedISO: "2026-07-13",
   author: "YouWin Visa Support Team",
   readingTime: "12 min read",
-  image: "/images/client-3.webp",
-  imageAlt: "Nigerian student preparing documents to study in Canada",
+  image: "/images/generated/blog/canada-study-permit.webp",
+  imageAlt: "Nigerian student organising his Canada study permit documents",
   excerpt:
     "How to apply for a Canada study permit from Nigeria in 2026, including the DLI offer, PAL rules, CAD 22,895 living funds and document checklist.",
   keywords: [
