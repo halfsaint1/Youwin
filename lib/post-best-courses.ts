@@ -10,8 +10,8 @@ export const bestCoursesPost: Post = {
   updatedISO: "2026-07-13",
   author: "YouWin Education Team",
   readingTime: "11 min read",
-  image: "/images/about-team-consulting.png",
-  imageAlt: "Education consultant helping a Nigerian student compare courses abroad",
+  image: "/images/generated/blog/best-courses.webp",
+  imageAlt: "Nigerian student comparing study abroad course options at her desk",
   excerpt:
     "Compare high-value courses Nigerian students can study abroad in 2026 based on career fit, practical training, accreditation and destination rules.",
   keywords: [

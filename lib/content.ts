@@ -148,7 +148,7 @@ export const homeTestimonials: Testimonial[] = [
     role: "Master's student, Leeds",
     country: "United Kingdom",
     tags: ["Admission", "Visa", "Documentation", "Housing Support"],
-    image: "/images/client-1.webp",
+    image: "/images/generated/testimonials/ngozi-chukwu.webp",
     quote:
       "I was stressing about the visa paperwork, honestly. My sister used YouWin last year and kept saying, just call them. They handled my uni application, chased me when I was slow with documents, and even helped sort accommodation before I flew. I'm in Leeds doing my Master's now, and I still WhatsApp them when something confuses me.",
   },
@@ -157,7 +157,7 @@ export const homeTestimonials: Testimonial[] = [
     role: "B.Sc. graduate",
     country: "United Kingdom",
     tags: ["Admission", "Visa", "Documentation", "Housing Support"],
-    image: "/images/client-2.webp",
+    image: "/images/generated/testimonials/dayo-ogundare.webp",
     quote:
       "UK was always the plan, but I had no idea which schools would take my HND. YouWin didn't just send me a long list. They explained why each option made sense for my budget. Visa came through in about four weeks. Still feels a bit unreal, to be honest.",
   },
@@ -166,7 +166,7 @@ export const homeTestimonials: Testimonial[] = [
     role: "Undergraduate, Manchester",
     country: "United Kingdom",
     tags: ["Guidance", "Visa", "Flight Tickets", "Post Arrival"],
-    image: "/images/client-3.webp",
+    image: "/images/generated/testimonials/serah-idode.webp",
     quote:
       "First time applying abroad and I was scared of getting scammed, not gonna lie. YouWin walked me through everything on WhatsApp, step by step. They even flagged a partial scholarship I didn't know I qualified for. Landed in Manchester three months ago and I'm settling in properly now.",
   },
@@ -175,7 +175,7 @@ export const homeTestimonials: Testimonial[] = [
     role: "First time applicant",
     country: "United Kingdom",
     tags: ["University", "Visa", "Relocation", "Housing Support"],
-    image: "/images/client-2.webp",
+    image: "/images/generated/testimonials/samuel.webp",
     quote:
       "Before YouWin I was just googling random things and getting more confused. They sat with me, looked at my results properly, and told me straight which unis were realistic. Visa approved first try. My mum was probably the happiest person in the house that day.",
   },
@@ -187,7 +187,7 @@ export const caseStudies: Testimonial[] = [
     role: "Master's in Business, University of Birmingham",
     country: "United Kingdom",
     tags: ["University Selection", "Visa", "Document Processing"],
-    image: "/images/client-1.webp",
+    image: "/images/generated/testimonials/linda-idode.webp",
     quote:
       "I was panicking, fresh out of NYSC, and everyone kept saying UK visa is hard. YouWin broke it into small steps: personal statement, CAS letter, bank statement, all of it. Three weeks after biometrics, my visa was out. Now I'm at Birmingham doing Business Management, and my flatmate is also a YouWin student, funnily enough.",
   },
@@ -196,7 +196,7 @@ export const caseStudies: Testimonial[] = [
     role: "Nursing, Melbourne",
     country: "Australia",
     tags: ["Application Review", "Reapplication Support", "Visa"],
-    image: "/images/hero-graduate.jpg",
+    image: "/images/generated/testimonials/daniel-ogundare.webp",
     quote:
       "I applied to Australia twice on my own and got rejected both times. I almost gave up. A friend said try YouWin. They looked at my old files and told me straight what was wrong. Weak personal statement, wrong course pairing. Third time went through. I'm in Melbourne studying Nursing now, and it's been worth every bit of the stress.",
   },
@@ -205,7 +205,7 @@ export const caseStudies: Testimonial[] = [
     role: "Study Permit, Canada",
     country: "Canada",
     tags: ["Personal Statement Review", "Visa Guidance"],
-    image: "/images/client-3.webp",
+    image: "/images/generated/testimonials/femi-olabode.webp",
     quote:
       "What I liked is they didn't oversell Canada to me. They said my profile was strong, but my funds letter needed work, and they showed me exactly how to fix it. No pressure, no weird promises. Study permit landed in less than a month. I'm in Toronto now, getting ready for September intake.",
   },
@@ -214,10 +214,18 @@ export const caseStudies: Testimonial[] = [
     role: "Parent, Trinity College Dublin",
     country: "Ireland",
     tags: ["Admissions Support", "Scholarship", "Housing Assistance"],
-    image: "/images/client-2.webp",
+    image: "/images/generated/testimonials/blessing-chukwu.webp",
     quote:
       "My daughter wanted Trinity College Dublin and I didn't trust random agents online. YouWin kept calling me with updates on her admission letter, scholarship offer, and accommodation options. As a parent, that mattered more than anything. She's in Dublin now and doing well. I'd send any parent their way.",
   },
+];
+
+/** Stories rotated in the homepage testimonial carousel. */
+export const carouselTestimonials: Testimonial[] = [
+  ...caseStudies,
+  ...homeTestimonials.filter((t) =>
+    ["Ngozi Chukwu", "Dayo Ogundare"].includes(t.name)
+  ),
 ];
 
 export const faqs = [
@@ -287,6 +295,6 @@ export const coreValues = [
   {
     title: "Team Work",
     description:
-      "Your success needs more than one person. Our teams in the UK, Nigeria, and the UAE work together so nothing important gets missed.",
+      "Your success needs more than one person. Our teams in the UK and Nigeria work together so nothing important gets missed.",
   },
 ];

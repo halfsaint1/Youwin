@@ -21,7 +21,7 @@ import { CtaBand } from "@/components/sections/cta-band";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "YouWin Educational Consulting helps ambitious students study abroad with honest guidance and hands-on support at every step. Offices in the UK, Nigeria, and the UAE.",
+    "YouWin Educational Consulting helps ambitious students study abroad with honest guidance and hands-on support at every step. Offices in the UK and Nigeria.",
   alternates: { canonical: "/about" },
 };
 
@@ -58,7 +58,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-[1fr_0.85fr] gap-5">
             <div className="relative aspect-[3/4] overflow-hidden rounded-[1.75rem]">
               <Image
-                src="/images/about-panel-left.jpg"
+                src="/images/generated/about/panel-left.webp"
                 alt="Students researching universities together with a YouWin advisor at the office"
                 fill
                 sizes="(max-width: 1024px) 55vw, 26vw"
@@ -67,7 +67,7 @@ export default function AboutPage() {
             </div>
             <div className="relative mt-14 aspect-[3/4] overflow-hidden rounded-[1.75rem]">
               <Image
-                src="/images/about-panel-right.jpg"
+                src="/images/generated/about/panel-right.webp"
                 alt="A YouWin consultant guiding a student through his study abroad options"
                 fill
                 sizes="(max-width: 1024px) 45vw, 22vw"
@@ -76,9 +76,9 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="absolute -bottom-6 -left-4 rounded-2xl border bg-white px-6 py-4 shadow-[0_20px_48px_-16px_rgba(27,29,35,0.18)] sm:-left-8">
-            <p className="font-mono text-2xl font-semibold text-brand">3</p>
+            <p className="font-mono text-2xl font-semibold text-brand">2</p>
             <p className="text-xs font-medium text-muted-foreground">
-              Offices in the UK, Nigeria &amp; UAE
+              Offices in the UK &amp; Nigeria
             </p>
           </div>
         </Reveal>
@@ -90,7 +90,7 @@ export default function AboutPage() {
       <section className="container-site grid items-center gap-14 py-20 sm:py-24 lg:grid-cols-2">
         <Reveal className="relative order-2 aspect-[4/3] overflow-hidden rounded-[2rem] lg:order-1">
           <Image
-            src="/images/about-our-story.png"
+            src="/images/generated/about/our-story.webp"
             alt="A YouWin consultant helping a student plan their study abroad journey with university admissions and visa support"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
@@ -109,7 +109,7 @@ export default function AboutPage() {
             built YouWin to provide both.
           </p>
           <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-            Today we work from offices in the UK, Nigeria, and the UAE, helping
+            Today we work from offices in the UK and Nigeria, helping
             students secure admissions, visas, and scholarships. We bring solid
             knowledge of international education systems, and we stay involved
             until the job is done.

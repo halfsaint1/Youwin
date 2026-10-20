@@ -21,8 +21,8 @@ export function WhoWeAre() {
         <div className="grid grid-cols-[1fr_0.85fr] gap-5">
           <div className="relative aspect-[3/4] overflow-hidden rounded-[1.75rem]">
             <Image
-              src="/images/about-panel-left.jpg"
-              alt="Students researching universities together with a YouWin advisor at the office"
+              src="/images/about-students-laptop.jpg"
+              alt="Two students reviewing university options together on a laptop and tablet"
               fill
               sizes="(max-width: 1024px) 55vw, 26vw"
               className="object-cover transition-transform duration-700 hover:scale-[1.03]"
@@ -30,8 +30,8 @@ export function WhoWeAre() {
           </div>
           <div className="relative mt-14 aspect-[3/4] overflow-hidden rounded-[1.75rem]">
             <Image
-              src="/images/about-panel-right.jpg"
-              alt="A YouWin consultant guiding a student through his study abroad options"
+              src="/images/generated/about-youwin-consultation.jpg"
+              alt="An education consultant guiding a student through his study abroad plan"
               fill
               sizes="(max-width: 1024px) 45vw, 22vw"
               className="object-cover transition-transform duration-700 hover:scale-[1.03]"
@@ -53,15 +53,15 @@ export function WhoWeAre() {
             Who We Are
           </h2>
           <p className="mt-6 max-w-2xl text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
-            YouWin Educational Consulting is a global education consultancy
-            with offices in the UK, Nigeria, and the UAE. We help students from
-            all backgrounds achieve their goal of studying abroad. Thanks to
-            our partnerships with accredited universities in the UK, USA,
-            Canada, and Europe, we offer expert support at every step, from
-            your first consultation to university placement and visa
-            application.
+            YouWin Educational Consulting is an education consultancy with
+            offices in the UK and Nigeria, dedicated to helping
+            Nigerian students achieve their goal of studying abroad. Through
+            our partnerships with accredited universities in the UK, Ireland,
+            the USA, Canada, and Australia, we offer expert support at every
+            step, from your first consultation to university placement and
+            visa application.
           </p>
-          <p className="mt-4 max-w-2xl text-pretty leading-relaxed text-muted-foreground">
+          <p className="mt-4 max-w-2xl text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
             We pay close attention to every detail to make sure your journey is
             smooth, well-organized, and stress-free from start to finish.
           </p>

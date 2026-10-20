@@ -4,12 +4,13 @@ export const site = {
   url: "https://youwinconsult.com",
   tagline: "Expert Guidance for Your Global Education Journey",
   description:
-    "YouWin Educational Consulting is a global education consultancy with offices in the UK, Nigeria, and the UAE, helping students secure admissions, visas, and scholarships at top universities in the UK, USA, Canada, and Europe.",
+    "YouWin Educational Consulting is an education consultancy with offices in the UK and Nigeria, helping Nigerian students secure admissions, visas, and scholarships at top universities in the UK, Ireland, the USA, Canada, and Australia.",
   address: {
-    street: "4 Broad Street",
+    street: "70 Broad Street",
     locality: "Lagos Island",
     region: "Lagos",
     country: "Nigeria",
+    full: "70 Broad Street, Lagos Island, Lagos, Nigeria",
   },
   addressUK: {
     street: "6 Parkland Rise",
@@ -25,7 +26,7 @@ export const site = {
   social: {
     facebook: "https://www.facebook.com/youwinconsult/",
   },
-  offices: ["UK", "Nigeria", "UAE"],
+  offices: ["UK", "Nigeria"],
 } as const;
 
 export const nav = [

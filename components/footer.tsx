@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
+import { ArrowUpRight, Mail, Phone } from "lucide-react";
 
 import { nav, site } from "@/lib/site";
 import { Button } from "@/components/ui/button";
@@ -37,7 +37,7 @@ export function Footer() {
       />
 
       {/* Main columns — equal widths, equal gaps, shared baseline */}
-      <div className="container-site relative grid gap-10 py-14 sm:grid-cols-2 sm:py-16 lg:grid-cols-4">
+      <div className="container-site relative grid gap-10 py-14 sm:grid-cols-2 sm:py-16 lg:grid-cols-3">
         <div>
           <Image
             src="/images/youwin-logo.png"
@@ -88,29 +88,6 @@ export function Footer() {
         </div>
 
         <div>
-          <ColumnLabel>Address</ColumnLabel>
-          <ul className="mt-5 space-y-3">
-            <li className="flex items-start gap-2.5 text-sm leading-relaxed text-ink/80">
-              <MapPin
-                className="mt-0.5 size-4 shrink-0 text-brand"
-                aria-hidden
-              />
-              <span>
-                {site.address.street}, {site.address.locality},{" "}
-                {site.address.region}, Nigeria
-              </span>
-            </li>
-            <li className="flex items-start gap-2.5 text-sm leading-relaxed text-ink/80">
-              <MapPin
-                className="mt-0.5 size-4 shrink-0 text-brand"
-                aria-hidden
-              />
-              <span>{site.addressUK.full}</span>
-            </li>
-          </ul>
-        </div>
-
-        <div>
           <ColumnLabel>Get Started</ColumnLabel>
           <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
             Get expert guidance tailored to your goals.
@@ -142,13 +119,9 @@ export function Footer() {
       </div>
 
       <div className="relative border-t">
-        <div className="container-site flex flex-col items-center justify-between gap-2 py-5 font-mono text-[0.6875rem] uppercase tracking-[0.12em] text-muted-foreground sm:flex-row">
+        <div className="container-site py-5 text-center font-mono text-[0.6875rem] uppercase tracking-[0.12em] text-muted-foreground">
           <p>
             Copyright © {new Date().getFullYear()} YouWin Education Consulting
-          </p>
-          <p>
-            {site.address.street}, {site.address.locality},{" "}
-            {site.address.region}
           </p>
         </div>
       </div>

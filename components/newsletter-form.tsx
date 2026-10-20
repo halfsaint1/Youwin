@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input";
 
 // Deliberately lightweight (no RHF/Zod): this form ships in the footer on
 // every page, so a single email field isn't worth 80 kB in the shared bundle.
-export function NewsletterForm() {
+export function NewsletterForm({ id = "newsletter-email" }: { id?: string }) {
   const [subscribed, setSubscribed] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -46,17 +46,17 @@ export function NewsletterForm() {
       }}
     >
       <div className="flex gap-2">
-        <label htmlFor="newsletter-email" className="sr-only">
+        <label htmlFor={id} className="sr-only">
           Email address
         </label>
         <Input
-          id="newsletter-email"
+          id={id}
           name="email"
           type="email"
           required
           placeholder="Enter your email address"
           aria-invalid={!!error}
-          aria-describedby={error ? "newsletter-email-error" : undefined}
+          aria-describedby={error ? `${id}-error` : undefined}
           onChange={() => setError(null)}
           className="h-12 rounded-full bg-white px-5"
         />
@@ -66,7 +66,7 @@ export function NewsletterForm() {
       </div>
       {error && (
         <p
-          id="newsletter-email-error"
+          id={`${id}-error`}
           className="mt-2 pl-5 text-xs font-medium text-destructive"
         >
           {error}

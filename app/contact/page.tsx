@@ -58,14 +58,9 @@ const channels = [
   {
     icon: MapPin,
     title: "Visit Us",
-    lines: [
-      `${site.address.street}, ${site.address.locality}, ${site.address.region}, Nigeria`,
-      site.addressUK.full,
-    ],
+    lines: [site.address.full, site.addressUK.full],
     hrefs: [
-      `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-        `${site.address.street}, ${site.address.locality}, ${site.address.region}, Nigeria`
-      )}`,
+      `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(site.address.full)}`,
       `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
         `${site.addressUK.street}, ${site.addressUK.locality}, ${site.addressUK.country}`
       )}`,

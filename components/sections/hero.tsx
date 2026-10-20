@@ -67,13 +67,22 @@ export function Hero() {
             path to studying abroad. We’re here to help you reach your goal of
             studying overseas.
           </motion.p>
-          <motion.div className="mt-10 flex flex-wrap gap-4" {...rise(0.24)}>
-            <Button asChild size="lg">
+          <motion.div className="mt-10 flex gap-3 sm:gap-4" {...rise(0.24)}>
+            <Button
+              asChild
+              size="lg"
+              className="flex-auto px-4 text-sm sm:flex-none sm:px-8 sm:text-base"
+            >
               <Link href="/apply">
                 Apply Now <ArrowRight className="size-4" aria-hidden />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="bg-white/70">
+            <Button
+              asChild
+              variant="outline"
+              size="lg"
+              className="flex-auto bg-white/70 px-4 text-sm sm:flex-none sm:px-8 sm:text-base"
+            >
               <Link href="/services">Explore Our Services</Link>
             </Button>
           </motion.div>

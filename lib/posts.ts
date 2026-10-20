@@ -57,3 +57,55 @@ export const homepagePosts = posts.slice(0, 3);
 export function getPost(slug: string) {
   return posts.find((post) => post.slug === slug);
 }
+
+export type PostSummary = Pick<
+  Post,
+  | "slug"
+  | "title"
+  | "category"
+  | "categorySlug"
+  | "date"
+  | "dateISO"
+  | "author"
+  | "excerpt"
+  | "readingTime"
+  | "image"
+  | "imageAlt"
+>;
+
+/** Strips article bodies so listings can be passed to client components cheaply. */
+export function toSummary(post: Post): PostSummary {
+  const {
+    slug,
+    title,
+    category,
+    categorySlug,
+    date,
+    dateISO,
+    author,
+    excerpt,
+    readingTime,
+    image,
+    imageAlt,
+  } = post;
+  return {
+    slug,
+    title,
+    category,
+    categorySlug,
+    date,
+    dateISO,
+    author,
+    excerpt,
+    readingTime,
+    image,
+    imageAlt,
+  };
+}
+
+export function getRelatedPosts(slug: string, count = 3): PostSummary[] {
+  const index = posts.findIndex((post) => post.slug === slug);
+  return Array.from({ length: Math.min(count, posts.length - 1) }, (_, i) =>
+    toSummary(posts[(index + 1 + i) % posts.length])
+  );
+}

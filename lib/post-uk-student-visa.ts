@@ -10,8 +10,8 @@ export const ukStudentVisaPost: Post = {
   updatedISO: "2026-07-13",
   author: "YouWin Visa Support Team",
   readingTime: "12 min read",
-  image: "/images/students-celebrating.jpg",
-  imageAlt: "Nigerian students celebrating after preparing to study in the UK",
+  image: "/images/generated/blog/uk-student-visa.webp",
+  imageAlt: "Nigerian student checking her UK student visa documents",
   excerpt:
     "The current UK Student visa requirements for Nigerians in 2026, including fees, CAS, documents, TB tests, the 28-day funds rule and common refusal risks.",
   keywords: [
