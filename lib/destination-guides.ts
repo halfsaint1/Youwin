@@ -32,10 +32,11 @@ export const destinationGuides: DestinationGuide[] = [
     shortName: "UK",
     flag: "/images/flags/united-kingdom.png",
     image: "/images/generated/destination-united-kingdom.webp",
-    imageAlt: "Historic United Kingdom university campus for international students",
+    imageAlt:
+      "Postgraduate students leaving a red-brick university building on a wet Manchester street",
     headline: "Study in the UK",
     summary:
-      "Respected degrees, one-year master’s programmes, and clear pathways from application to Student visa.",
+      "Compare one-year master’s courses, published 2026/27 international fees, scholarships and the September and January intakes.",
     studyInLabel: "the UK",
     whyStudy:
       "The UK remains a top choice for Nigerian students who want quality education, shorter postgraduate programmes, and strong global recognition. We help you shortlist the right universities, prepare a competitive application, and move smoothly through CAS and visa stages.",
@@ -64,9 +65,9 @@ export const destinationGuides: DestinationGuide[] = [
       },
     ],
     costs: {
-      tuition: "£14,000–£35,000+ / year",
-      living: "£1,171–£1,529 / month (UKVI)",
-      visa: "£558 + healthcare surcharge",
+      tuition: "£17,000–£19,950 on the courses below",
+      living: "£1,171 outside London / £1,529 in London per month",
+      visa: "Student visa fee + yearly healthcare surcharge",
     },
     visaSnapshot: [
       "Offer and CAS from a licensed student sponsor",
@@ -131,10 +132,11 @@ export const destinationGuides: DestinationGuide[] = [
     shortName: "Ireland",
     flag: "/images/flags/ireland.png",
     image: "/images/generated/destination-ireland.webp",
-    imageAlt: "Irish university courtyard and campus for international students",
+    imageAlt:
+      "Students comparing notes on the steps of a limestone university building in Dublin",
     headline: "Study in Ireland",
     summary:
-      "English-speaking education in Europe’s technology and life-sciences hub, with clear work and graduate options.",
+      "Compare September 2026 master’s courses in Dublin, with published international fees from €13,500.",
     studyInLabel: "Ireland",
     whyStudy:
       "Ireland suits students targeting technology, pharmaceuticals, finance and business. We help you choose eligible programmes, prepare visa finances correctly, and plan accommodation early—especially for Dublin.",
@@ -218,10 +220,11 @@ export const destinationGuides: DestinationGuide[] = [
     shortName: "USA",
     flag: "/images/flags/usa.png",
     image: "/images/generated/destination-usa.webp",
-    imageAlt: "American university campus quad for international students",
+    imageAlt:
+      "Students checking a timetable while crossing an American university quad",
     headline: "Study in the USA",
     summary:
-      "Unmatched programme choice, research depth and flexible academic pathways across thousands of institutions.",
+      "Compare Fall and Spring intakes, published international graduate tuition, and the funds an F-1 visa expects.",
     studyInLabel: "the USA",
     whyStudy:
       "The USA offers breadth few destinations can match—from community colleges to research universities. We help you build a balanced shortlist, prepare funding evidence and get ready for a clear F-1 visa interview.",
@@ -305,16 +308,17 @@ export const destinationGuides: DestinationGuide[] = [
     shortName: "Canada",
     flag: "/images/flags/canada.png",
     image: "/images/generated/destination-canada.webp",
-    imageAlt: "Canadian university campus with autumn maple trees for international students",
+    imageAlt:
+      "Students walking a snowy path outside a glass and brick university building in winter",
     headline: "Study in Canada",
     summary:
-      "Career-focused education across universities and colleges—with careful DLI, PAL and PGWP checks first.",
+      "Compare September, January and May starts, then add tuition to the CAD 23,448 living-cost figure before you apply.",
     studyInLabel: "Canada",
     whyStudy:
       "Canada is popular for applied learning and strong academic programmes. We verify DLI status, attestation requirements and Post-Graduation Work Permit eligibility before you pay a deposit.",
     highlights: [
       { label: "Main intake", value: "September" },
-      { label: "Living funds", value: "CAD 22,895" },
+      { label: "Living funds", value: "CAD 23,448" },
       { label: "Work while studying", value: "24 hrs/week" },
       { label: "Permit fee", value: "CAD 150 + biometrics" },
     ],
@@ -338,7 +342,7 @@ export const destinationGuides: DestinationGuide[] = [
     ],
     costs: {
       tuition: "CAD 18,000–CAD 40,000+ / year",
-      living: "CAD 22,895 first-year minimum",
+      living: "CAD 23,448 first year, from 1 Sept 2026",
       visa: "CAD 150 + CAD 85 biometrics",
     },
     visaSnapshot: [
@@ -356,7 +360,7 @@ export const destinationGuides: DestinationGuide[] = [
       {
         question: "How much proof of funds do I need?",
         answer:
-          "One applicant outside Quebec currently needs CAD 22,895 for first-year living expenses, plus tuition and transportation.",
+          "For a study permit lodged on or after 1 September 2026, one applicant outside Quebec needs CAD 23,448 for first-year living expenses, plus tuition and transportation.",
       },
       {
         question: "Do master’s students need a PAL?",
@@ -392,10 +396,11 @@ export const destinationGuides: DestinationGuide[] = [
     shortName: "Australia",
     flag: "/images/flags/australia.png",
     image: "/images/generated/destination-australia.webp",
-    imageAlt: "Australian university campus under bright sky for international students",
+    imageAlt:
+      "Students working on laptops under gum trees outside a Melbourne university building",
     headline: "Study in Australia",
     summary:
-      "High-quality education with practical learning across dynamic cities—and a strong Genuine Student assessment.",
+      "Compare February and July intakes, CRICOS courses, and the AUD 29,710 living-cost benchmark before you accept an offer.",
     studyInLabel: "Australia",
     whyStudy:
       "Australia offers respected universities and practical higher-education routes. We help you choose a CRICOS-registered course, prepare Genuine Student answers, arrange OSHC and lodge a complete Subclass 500 application.",

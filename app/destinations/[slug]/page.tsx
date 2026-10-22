@@ -9,6 +9,7 @@ import {
   getDestinationGuide,
 } from "@/lib/destination-guides";
 import { site } from "@/lib/site";
+import { DestinationComparison } from "@/components/destination-comparison";
 import { UniversityPartnersMarquee } from "@/components/university-partners-marquee";
 import { Button } from "@/components/ui/button";
 import {
@@ -211,31 +212,9 @@ export default async function DestinationPage({
         </div>
       </section>
 
-      {/* University partners marquee */}
-      <UniversityPartnersMarquee partners={destination.partners} />
+      <DestinationComparison destination={destination} />
 
-      {/* Programs */}
-      <section className="container-site py-16 sm:py-20">
-        <div className="max-w-2xl">
-          <p className="eyebrow">Popular programmes</p>
-          <h2 className="mt-3 text-balance text-3xl font-bold tracking-tight text-ink sm:text-4xl">
-            Top programmes to study in {destination.studyInLabel}
-          </h2>
-        </div>
-        <div className="mt-10 grid gap-4 sm:grid-cols-2">
-          {destination.programs.map((program) => (
-            <article
-              key={program.title}
-              className="rounded-3xl border bg-white p-7 transition-colors hover:border-brand/25"
-            >
-              <h3 className="text-lg font-semibold text-ink">{program.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                {program.detail}
-              </p>
-            </article>
-          ))}
-        </div>
-      </section>
+      <UniversityPartnersMarquee partners={destination.partners} />
 
       {/* FAQ */}
       <section className="container-site py-16 sm:py-20">
